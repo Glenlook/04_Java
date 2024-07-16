@@ -34,7 +34,7 @@ public class PrintEx {
 		 *   
 		 *   System.out.printf("나는 %s 입니다", name);
 		 * 
-		 *   %d : 정수 (byte, short, int)
+		 *  %d : 정수 (byte, short, int)
 		 *  %c : 문자 (char)
 		 *  %s : 문자열 (String)
 		 *  %b : 논리형 (boolean)
