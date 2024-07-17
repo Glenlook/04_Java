@@ -268,8 +268,6 @@ public class ConditionEx {
 		int soc = sc.nextInt(); // 사
 		int sci = sc.nextInt(); // 과
 		
-		double sum = (kor + eng + mat + soc + sci) / 5.0;
-		
 		String str = "";
 		
 		if(kor < 40) str += "국어 ";
@@ -278,11 +276,12 @@ public class ConditionEx {
 		if(soc < 40) str += "사회 ";
 		if(sci < 40) str += "과학 ";
 		
-		
 		if(str != "") {
 			System.out.printf("FAIL [40점 미만 과목 : %s]", str);
 			return;
 		}
+		
+		double sum = (kor + eng + mat + soc + sci) / 5.0;
 		
 		if(sum < 60) System.out.printf("FAIL [점수 : %.1f (평균 미달)]", sum);
 		else System.out.printf("PASS [점수 : %.1f / 100]", sum);
