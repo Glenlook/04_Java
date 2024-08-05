@@ -16,11 +16,12 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @EqualsAndHashCode
+
 public class Todo implements Serializable{ // 직렬화
 	
 	private String title;			// 할일 제목
-	private String detail;			// 상세 내용
-	private boolean complete;		// 완료 여부
+	private StringBuilder detail;			// 상세 내용
+	private int complete;		// 완료 여부
 	private LocalDateTime regDate;  // 등록 날짜
 	
 	// java.time 패키지
